@@ -1,2 +1,2 @@
 validation.sh 
-origin master repository
+branch name: develop_201909
