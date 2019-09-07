@@ -1,4 +1,2 @@
-hey this code is for generate config file
-dsfasgsa
-
-var=$123
+generateconfigFile.sh
+branch name: develop_201909
