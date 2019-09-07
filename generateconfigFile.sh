@@ -1,2 +1,2 @@
-hey this code is for generate config file
-fasdgsgag
+generateconfigFile.sh
+origin master reporsitory
