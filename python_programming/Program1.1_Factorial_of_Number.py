@@ -1,7 +1,4 @@
-import os
-
 def factorial(num):
-    result_num = ''
     if num < 0:
         result_num = 0
     elif num == 0 or num == 1:
@@ -12,7 +9,6 @@ def factorial(num):
             fact *= num
             num -= 1
         result_num = fact
-
     return result_num
 
 def main():
