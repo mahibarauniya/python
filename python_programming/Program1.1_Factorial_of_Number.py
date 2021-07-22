@@ -14,7 +14,7 @@ def factorial(num):
 def main():
     num = 5
     result = factorial(num)
-    print ("Number: {} and it's factorial is: {} ".format(num, result))
+    print ("Number: {} and it's factorial is: {} .........".format(num, result))
 
 if __name__ == "__main__":
     main()
