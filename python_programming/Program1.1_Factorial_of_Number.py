@@ -12,7 +12,7 @@ def factorial(num):
     return result_num
 
 def main():
-    num = 3
+    num = 5
     result = factorial(num)
     print ("Number: {} and it's factorial is: {} ".format(num, result))
 
