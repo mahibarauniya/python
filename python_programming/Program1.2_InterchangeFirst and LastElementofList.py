@@ -4,7 +4,7 @@ def main():
     first_element_in_array  = A[0]
     last_element_in_array   = A[-1]
 
-    print("Before change: first element is {} and last element is {}".format(first_element_in_array,last_element_in_array))
+    print("Before change: first element is {} and last element  is {}".format(first_element_in_array,last_element_in_array))
 
     temp                   = first_element_in_array
     first_element_in_array = last_element_in_array
