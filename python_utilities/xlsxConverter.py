@@ -22,3 +22,32 @@ python xlsxConverter.py \
 '''
 
 ################################################################################
+import os
+import sys
+
+# Always Append your project’s root directory to PYTHONPATH
+# set PYTHONPATH=%PYTHONPATH%;D:\study\python\python_utilities\
+
+
+import utils.loadLibrary as ll
+import utils.logutils as lu
+
+#
+# config = configparser.ConfigParser()
+# config.read('./../config/configDetails.conf')
+
+def main():
+    try:
+        print("hi")
+
+
+
+    except:
+        print("hi")
+
+
+
+
+
+if __name__ == "__main__":
+    main()

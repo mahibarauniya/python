@@ -13,7 +13,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S"
 )
 
-logger =  logging.getLogger(__name__)
+logger  = logging.getLogger(__name__)
 console = logging.StreamHandler()
 console.setLevel(logging.ERROR)
 
