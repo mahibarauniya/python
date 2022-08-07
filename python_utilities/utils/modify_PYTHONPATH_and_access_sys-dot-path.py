@@ -1,7 +1,7 @@
 ## This program is to set correctly the root directory for project
-#python_utilities is project and that need to be set in PYTHONPATH.
+#python_utilities is project root and hence that should be there in PYTHONPATH.
 
-print("all paths defined in PYTHONPATh")
+print("all paths defined in PYTHONPATH")
 import sys
 
 for p in sys.path:
@@ -10,7 +10,7 @@ for p in sys.path:
 ## how to set a path in PYTHONPATH - set it from environment variable or using cmd below
 #set PYTHONPATH=%PYTHONPATH%;D:\study\python\python_utilities\
 
-# D:\study\python\python_utilities  
+# D:\study\python\python_utilities
 # D:\study\python
 # C:\Users\mahib\AppData\Local\Programs\Python\Python37\python37.zip
 # C:\Users\mahib\AppData\Local\Programs\Python\Python37\DLLs
