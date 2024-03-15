@@ -9,13 +9,13 @@ import logging
 
 logging.basicConfig(
     level=logging.DEBUG,
-    format='%(asctime)s - %(filename)s - %(levelname)s -%(message)s',
+    format='%(asctime)s-%(filename)s-%(levelname)s-%(message)s',
     datefmt="%Y-%m-%d %H:%M:%S"
 )
 
 logger  = logging.getLogger(__name__)
 console = logging.StreamHandler()
-console.setLevel(logging.ERROR)
+console.setLevel(logging.INFO)
 
 def log_message(msg, type = "INFO"):
     if type == "INFO":
@@ -28,3 +28,7 @@ def log_message(msg, type = "INFO"):
         logger.critical(msg)
     else:
         logger.info(msg)
+
+def log_message_debug(debug, msg):
+    if debug:
+        log_message(msg, type = "INFO")

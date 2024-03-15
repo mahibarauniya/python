@@ -1,0 +1,34 @@
+#YAML Ain't Markup Language (YAML)
+
+RETAIL:
+  source:
+    name: datatransformation
+    repo_url: https://github.com/mahibarauniya/datatransformation.git
+    branch_name: main
+    folder_to_include: [
+      config,
+      data,
+      scripts
+    ]
+    files_to_exclude: [
+      README.md
+    ]
+
+  target:
+    name: datatransformation
+    repo_url: https://github.com/mahibarauniya/datatransformation.git
+    branch_name: dev
+    folder_to_include: [
+      config,
+      data,
+      scripts
+    ]
+    files_to_exclude: [
+      README.md
+      ]
+  email_group:
+
+
+
+
+MORTGAGE:
