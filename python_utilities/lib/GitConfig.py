@@ -40,5 +40,4 @@ class GitConfig(object):
 
         if self.debug:
             lu.log_message_debug(self.debug, "debug mode is ON [ True ] so displaying all the attributes of the class")
-
             self._display_attributes()
