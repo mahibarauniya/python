@@ -5,7 +5,7 @@ class GitConfig(object):
     def __init__(self, product, yaml, tmpLocation, debug):
         self.product     = product
         self.yaml        = yaml
-        self.tmpLocation = tmpLocation
+        self.tmpLocation = tmpLocation if tmpLocation else "D:\gitrepository\\tmp"
         self.debug       = debug
 
 

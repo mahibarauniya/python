@@ -18,6 +18,8 @@ sys.path.remove('D:\gitrepository\datatransformation')
 import utils.logutils as lu
 import argparse
 from lib.GitConfig import GitConfig
+import lib.processGit as pg
+import utils.customException as cm
 
 
 def main():
@@ -28,7 +30,7 @@ def main():
         parser.add_argument('--product'      , required= True, choices = ["RETAIL", "MORTGAGE"], help="product from yaml file which has git repositories details")
         parser.add_argument('--yaml'         , required= False, dest =  'yaml',                                       help="yaml file which has all the details for git repositories")
         parser.add_argument('--tmpLocation'  , required= False, dest =  'tmpLocation',                                help="tmpLocation  for git repositories")
-        parser.add_argument('--debug', action='store_true', help='--debug mode pass it if you want to debug the code')
+        parser.add_argument('--debug', action='store_true',  help='--debug mode pass it if you want to debug the code')
 
         args = parser.parse_args()
         lu.log_message("****************** Start: gitComparison:: program starts from here ****************** ", "INFO")
@@ -37,9 +39,13 @@ def main():
 
         obj_gitConfig.initialize_variable()
 
+        diffFile = pg.gitDiffGenerator ( obj_gitConfig, args.debug )
+
+
 
     except Exception as e:
-        lu.log_message("Error Occurred !! {}".format(e))
+        lu.log_message("Error processing Git Comparison Utility !! {}".format(e))
+        sys.exit(1)
 
 
 if __name__ == "__main__":

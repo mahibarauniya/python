@@ -13,3 +13,12 @@ class FileNotFound(Exception):
         self.msg = _msg
     pass
 
+class CreateFolderException(Exception):
+    def __init__(self, _msg):
+        self.msg = _msg
+    pass
+
+class DeleteFolderException(Exception):
+    def __init__(self, _msg):
+        self.msg = _msg
+    pass
