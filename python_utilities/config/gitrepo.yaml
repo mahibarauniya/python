@@ -8,9 +8,12 @@ RETAIL:
     folder_to_include: [
       config,
       data,
-      scripts
+      scripts,
+      utils,
+      wrapper
     ]
     files_to_exclude: [
+      modify_and_get_PYTHONPATH.py,
       README.md
     ]
 
@@ -20,8 +23,11 @@ RETAIL:
     branch_name: dev
     folder_to_include: [
       config,
+      config\templates,
       data,
-      scripts
+      scripts,
+      utils,
+      wrapper
     ]
     files_to_exclude: [
       README.md

@@ -12,7 +12,6 @@ fileName = __file__  # or by using inspect module we can get file name #fileName
 
 config = configparser.ConfigParser()
 path_current_directory = os.path.dirname(__file__)
-print(path_current_directory)
 
 path_parent_directory=os.path.abspath(os.path.join(path_current_directory, '..'))
 
@@ -105,7 +104,7 @@ def delete_folder_if_exists(debugMode, folder):
             returncode = p.returncode
 
             if returncode != 0:
-                raise cm.DeleteFolderException
+                raise cm.DeleteFolderException("Error Occurred... while deleting this folder {} ".format(folder))
 
 
     except Exception as e:

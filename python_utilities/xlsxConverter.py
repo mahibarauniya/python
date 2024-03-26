@@ -99,7 +99,6 @@ def main():
 
         outputfile = outputfiledir + "/" + fileprefix + "." + args.outputformat
 
-        lu.log_message("I am here", "INFO")
         ##reading the excel file from input file path...
         df_inputfile = pd.read_excel (file_with_path, skiprows = cntskipheader)
         lu.log_message("delimiter {} is used while converting the input file ".format(args.delimiter), "INFO")

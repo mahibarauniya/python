@@ -4,6 +4,7 @@
 #Usage: Used to compare two git repositories
 #Call-
 # --product="RETAIL" --yaml .\..\config\gitrepo.yaml  --tmpLocation D:\gitrepository\tmp\ --debug
+# --product="RETAIL" --yaml .\..\config\gitrepo.yaml  --tmpLocation D:\gitrepository\tmp
 ########################################################################################################################
 
 
@@ -39,9 +40,12 @@ def main():
 
         obj_gitConfig.initialize_variable()
 
-        diffFile = pg.gitDiffGenerator ( obj_gitConfig, args.debug )
+        pg.gitProcess ( obj_gitConfig, args.debug )
 
+        reposource = args.tmpLocation + "\\" + obj_gitConfig.source_repo_name + "_" + obj_gitConfig.source_branch_name
+        repotarget = args.tmpLocation + "\\" + obj_gitConfig.target_repo_name + "_" + obj_gitConfig.target_branch_name
 
+        diffFile = pg.runCompare ( args.debug, args.tmpLocation, reposource,  repotarget, obj_gitConfig )
 
     except Exception as e:
         lu.log_message("Error processing Git Comparison Utility !! {}".format(e))
