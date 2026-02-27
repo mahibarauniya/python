@@ -34,6 +34,7 @@
 - [Deployment](#-deployment)
 - [Best Practices](#-best-practices)
 - [Common Issues & Fixes](#-common-issues--fixes)
+- [Deployment of Streamlitapp for free](#Deployment-Streamlit-App-Free)
 - [Resources](#-resources)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -660,7 +661,45 @@ altair>=5.0.0
 | Large file upload fails | Default limit is 200MB | Set `server.maxUploadSize` in `config.toml` |
 
 ---
+# Deployment Streamlit App Free
 
+https://mahistreamapp.streamlit.app/
+### 1. Streamlit Community Cloud *(Easiest & Most Recommended)*
+
+This is the **official free hosting platform** by Streamlit.
+
+**Steps:**
+1. Push your Streamlit app to a **public GitHub repository**
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Sign in with your GitHub account
+4. Click "New app" and select your repository, branch, and main Python file
+5. Click "Deploy!" – your app will be live in minutes!
+
+**Requirements:**
+- A `requirements.txt` file listing your dependencies
+- A main Python file (e.g., `app.py`)
+
+**Sample `requirements.txt`:**
+```
+streamlit
+pandas
+numpy
+```
+
+**Example app structure:**
+```
+my-streamlit-app/
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+**Recommendation:**
+Start with [Streamlit Community Cloud](https://share.streamlit.io) — it's the simplest,
+purpose-built for Streamlit, and completely free. Just make sure your code is in a
+public GitHub repository. 🎉
+
+---
 ## 📚 Resources
 
 - 📖 [Official Streamlit Docs](https://docs.streamlit.io)
