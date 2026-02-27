@@ -663,7 +663,7 @@ altair>=5.0.0
 ---
 # Deployment Streamlit App Free
 
-https://mahistreamapp.streamlit.app/
+https://mahicalculator.streamlit.app/
 ### 1. Streamlit Community Cloud *(Easiest & Most Recommended)*
 
 This is the **official free hosting platform** by Streamlit.
