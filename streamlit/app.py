@@ -1,8 +1,8 @@
 import streamlit as st
 from main import add_numbers
 
-st.title("Hello, Streamlit! 👋")
-st.write("Welcome to your first Streamlit app.")
+st.title("Hello, User👋")
+st.write("Welcome to Mahi first Streamlit app.")
 
 # Simple calculator using main.py
 st.subheader("Simple Calculator")
